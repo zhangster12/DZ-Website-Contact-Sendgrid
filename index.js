@@ -1,7 +1,7 @@
 const express = require('express'); //Needed to launch server.
 const bodyParser = require('body-parser');
 const cors = require('cors'); //Needed to disable sendgrid security.
-const sendGrid = require("@sendGrid/mail"); //Access SendGrid library to send emails.
+const sendGrid = require('@sendgrid/mail'); //Access SendGrid library to send emails.
 sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
 const app = express(); //Alias from the express function.
 
