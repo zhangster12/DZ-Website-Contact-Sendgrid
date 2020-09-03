@@ -17,6 +17,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/api', (req, res, next) => {
+    console.log(process.env.SENDGRID_API_KEY);
     res.send('API Status: Running');
 });
 
