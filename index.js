@@ -7,7 +7,7 @@ const app = express(); //Alias from the express function.
 
 app.use(bodyParser.json());
 
-app.use(cors());
+app.use(cors({origin: '*'}))
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*'); // Change later to only allow our server
