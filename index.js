@@ -43,3 +43,9 @@ app.post('/api/email', (req, res, next) => {
 });
 
 app.listen(process.env.PORT || 4000);
+
+app.use(express.static(__dirname, { dotfiles: 'allow' } ));
+
+app.listen(80, () => {
+  console.log('HTTP server running on port 80');
+});
