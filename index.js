@@ -24,7 +24,7 @@ app.post('/api/email', (req, res, next) => {
     console.log(req.body);
     const msg = {
         to: 'dyzhang@gatech.edu',
-        from: req.body.email,
+        from: 'dyzhang@gatech.edu',
         subject: req.body.subject + ', Email: ' + req.body.email,
         text: req.body.message
     }
