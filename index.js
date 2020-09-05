@@ -43,5 +43,3 @@ app.post('/api/email', (req, res, next) => {
 });
 
 app.listen(process.env.PORT || 4000);
-
-app.use(express.static(__dirname, { dotfiles: 'allow' } ));
