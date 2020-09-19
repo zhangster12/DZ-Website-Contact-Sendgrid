@@ -25,8 +25,10 @@ app.post('/api/email', (req, res, next) => {
     const msg = {
         to: 'dyzhang@gatech.edu',
         from: 'dyzhang@gatech.edu',
-        subject: req.body.subject + ', Email: ' + req.body.email,
-        text: req.body.message
+        subject: req.body.subject,
+        text: 'From: ' + req.body.email + '\n' + 
+              'Subject: ' + req.body.subject + '\n\n' +
+              req.body.message,
     }
     sendGrid.send(msg)
         .then(result => {
