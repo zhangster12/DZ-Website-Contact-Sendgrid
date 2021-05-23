@@ -1,9 +1,9 @@
-const express = require('express'); //Needed to launch server.
+const app = express(); //Alias from the express function.
 const bodyParser = require('body-parser');
 const cors = require('cors'); //Needed to disable sendgrid security.
+const express = require('express'); //Needed to launch server.
 const sendGrid = require('@sendgrid/mail'); //Access SendGrid library to send emails.
 sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
-const app = express(); //Alias from the express function.
 
 app.use(bodyParser.json());
 
