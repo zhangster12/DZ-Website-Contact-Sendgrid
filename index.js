@@ -23,8 +23,8 @@ app.get('/api', (req, res, next) => {
 app.post('/api/email', (req, res, next) => {
     console.log(req.body);
     const msg = {
-        to: 'my@email.com',
-        from: 'my@email.com',
+        to: `${process.env.EMAIL}`,
+        from: `${process.env.EMAIL}`,
         subject: req.body.subject,
         text: 'From: ' + req.body.email + '\n' + 
               'Subject: ' + req.body.subject + '\n\n' +
