@@ -12,3 +12,10 @@ git add .
 git commit -m "Add existing file"
 git push origin
 ````
+
+## To push to Heroku, use the lines:
+```
+git add .
+git commit -am "make it better"
+git push heroku
+```
