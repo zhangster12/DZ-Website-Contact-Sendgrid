@@ -1,5 +1,5 @@
-# My-App-Node
-Provides the backend framework for the contact form of my website with Node.js
+# My-App-Contact
+Provides the backend framework for the contact form of danielyzhang.com with Node.js
 
 ### To run server:
 ```
