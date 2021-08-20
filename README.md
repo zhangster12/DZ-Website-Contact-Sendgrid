@@ -7,16 +7,16 @@ nodemon index.js
 ```
 
 ### To push updates to GitHub:
-````
+```
 git add .
-git commit -m "Add existing file"
+git commit -m "Updated file"
 git push origin
-````
+```
 
 ### To move Github repository:
-````
+```
 git remote set-url origin <https://...git>
-````
+```
 
 ### To push to Heroku:
 ```
