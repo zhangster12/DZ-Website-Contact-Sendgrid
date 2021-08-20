@@ -20,4 +20,8 @@ git commit -am "make it better"
 git push heroku
 ```
 
-## To reinitialize:
+## To reinitialize to Heroku:
+```
+git init
+heroku git:remote -a <new-repository>
+```
