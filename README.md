@@ -5,7 +5,7 @@ Provides the backend framework for the contact form of danielyzhang.com with Nod
 ```
 nodemon index.js
 ```
-dasfadsfsad
+
 ### To push updates to GitHub:
 ````
 git add .
@@ -13,14 +13,19 @@ git commit -m "Add existing file"
 git push origin
 ````
 
-## To push to Heroku:
+### To move Github repository:
+````
+git remote set-url origin <https://...git>
+````
+
+### To push to Heroku:
 ```
 git add .
 git commit -am "make it better"
 git push heroku
 ```
 
-## To reinitialize to Heroku:
+### To reinitialize to Heroku:
 ```
 git init
 heroku git:remote -a <new-repository>
