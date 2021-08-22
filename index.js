@@ -24,8 +24,8 @@ app.post('/api/email', (req, res, next) => {
     console.log(req.body);
     const msg = {
         to: `${process.env.EMAIL}`,
-        from: req.body.email,
-        subject: req.body.subject,
+        from: `${process.env.EMAIL}`,
+        subject: req.body.subject + ', from ' + req.body.email,
         text: req.body.message,
     }
     sendGrid.send(msg)
