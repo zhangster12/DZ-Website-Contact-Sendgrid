@@ -9,7 +9,7 @@ nodemon index.js
 ### To push updates to GitHub:
 ```
 git add .
-git commit -m "Updated file"
+git commit -m 'Updated file'
 git push origin
 ```
 
